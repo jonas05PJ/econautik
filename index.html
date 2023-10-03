@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="style/style2.css">
+	<title>EcoNautik</title>
+</head>
+<body	>
+<video autoplay muted loop id="background-video">
+        <source src="images/pexels_videos12.mp4" type="video/mp4">
+    </video>
+<header>
+	<div id="logo">
+		<a href="index.html"><img src="images/Logo/econautik.png"></a>
+	</div>
+	<div class="calendar">
+		<div id="time"></div>
+		<div id="date"></div>
+		</div>
+</header><br>
+<div id="menu"><nav>
+	<ul>
+		<li><a href="index.html"class="actif"><img src="images/icone/homea.png">Accueil</a></li>
+		<li><a href="indexa.html"><img src="images/icone/saturn.png" >Oceans<a></li>
+		<li><a href="lamantinA.html"><img src="images/icone/shuttle.png" >Fleuves<a></li>
+		<li><a href="frog.html"><img src="images/icone/asteroid.png">lacs<a></li>
+        	<li><a href="carte.html"  ><img src="images/icone/carte.png">Carte<a></li>
+	</ul>
+</nav>
+</div><br><br>
+	<div id="box1"></div>
+	<div id="box2">
+		<div id="content"><br><br><h1>DECOUVREZ LA FAUNE AQUATIQUE !</h1>
+		<div id="sub">
+			<p>
+				Découvrez les espèces rares qui peuplent les plans d'eau qui vous entourent.
+			Grâce à nos modeles 3D interactifs et nos quizz, Apprenez en plus sur ces 
+			creatures au detail près et découvrez leurs modes de vie uniques. En savoir plus sur
+			 les espèces en danger vous aidera à mieux les apprécier et à contribuer à leur conservation.</p>
+		</div>
+		<div id="img"> <img src="images/animaux-marins.webp" alt=""></div>
+		<a href="indexa.html" id="link"><div id="button">Explorer</div></a>
+		</div>
+<div id="shape"><img src="images/trait.png" alt=""></div>
+<div id="shape1"><img src="images/trait1.png" alt=""></div>
+	</div>
+	<div id="box4"> 
+		<h1>EXPLOREZ NOTRE CARTE INTERACTIVE !</h1><br>
+		<div id="sub2">
+			<p>
+				Notre plateforme de cartographie interactive dédiée à la préservation de l'eau et de la vie aquatique ! Notre carte vous offre un moyen simple et efficace de surveiller la qualité de l'eau de vos cours d'eau locaux. Vous pourrez également découvrir les espèces menacées qui peuplent ces écosystèmes précieux et obtenir des informations essentielles sur les mesures de protection nécessaires pour les préserver. Explorez, apprenez et agissez pour garantir un avenir durable pour nos ressources aquatiques.			</p>
+				<script type="module" src="Javascript/model.viewer.min.js"></script>
+<model-viewer id="mv-demo" shadow-intensity="0" src="assets/little_planet_earth.glb"
+alt="A 3D model of an astronaut" auto-rotate camera-controls interaction-prompt="auto" ar magic-leap></model-viewer>
+			<a href="carte.html"><div id="button2">découvrir</div></a>
+
+		</div>
+		<div id="shape2"><img src="images/trait1.png" alt=""></div>
+		<div id="shape3"><img src="images/trait.png" alt=""></div>
+	
+	</div>
+	<div id="download">
+		<a href="Econautik.apk"><img src="images/android.png" alt="" width="100px" height="auto"></a>
+		<label for="">Telecharger l'application </label>
+	</div>
+	
+
+<script src="Javascript/jquery.min.js"></script>
+<script type="text/javascript">
+
+let togg2 = document.getElementById("togg2");
+let d2 = document.getElementById("quizheader");
+let d3 = document.getElementById("ask");
+
+function abracadabra(){
+  if(getComputedStyle(d2).display != "none"){
+    d2.style.display = "none";
+	d3.style.display = "none";
+  } else {
+    d2.style.display = "block";
+	d3.style.display = "none";
+  }
+};
+togg2.onclick = abracadabra;
+</script>
+</body>
+</html>
