@@ -657,7 +657,7 @@ background-color: #d0ff00; letter-spacing: 1px;
         border-radius: none;
         font-family: poppins;
         padding: 5px;
-        margin-left: -55px;
+        margin-left: -80px;
         box-shadow: 5px 5px 5px black;
     }
     ul{
@@ -714,6 +714,8 @@ background-color: #d0ff00; letter-spacing: 1px;
         font-size: 15px;}
     
     nav li img{
+	position: relative;
+	top:-3px;
         vertical-align: -4px;
         margin: 1px;
         width: 12px;
@@ -727,7 +729,7 @@ background-color: #d0ff00; letter-spacing: 1px;
       border-radius: none;
       font-family: poppins;
       padding: 5px;
-      margin-left: -48px;
+      margin-left: -80px;
       margin-right: 0;
       box-shadow: 5px 5px 5px black;
   }
